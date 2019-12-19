@@ -1,0 +1,52 @@
+<!-- <div *ngIf="name;then thenBlock; else elseBlock">
+  Codevolution
+</div>
+
+<ng-template #thenBlock>
+  <h2>
+    Name is visible
+  </h2>
+</ng-template>
+
+
+<ng-template #elseBlock>
+  <h2>
+    Name is hidden
+  </h2>
+</ng-template>
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">You picked red color</div>
+  <div *ngSwitchCase="'blue'">You picked blue color</div>
+  <div *ngSwitchCase="'green'">You picked green color</div>
+  <div *ngSwitchDefault>Pick again</div>
+</div> -->
+<!-- 
+<div *ngFor="let color of colors; index as i">
+  <h2>{{i}} {{color}}</h2>
+</div> -->
+<!-- <h2>Hello {{name | titlecase}}</h2>
+<h2>Hello {{name | slice:1:3}}</h2>
+<h2>Hello {{person | json}}</h2>
+
+<h2>{{5.678 | number:'1.2-3'}}</h2>
+<h2>{{5.678 | number:'3.4-5'}}</h2>
+<h2>{{5.678 | number:'3.9-10'}}</h2>
+
+<h2>{{ 0.25 | percent }}</h2>
+<h2>{{ 0.25 | currency: 'EUR' }}</h2> -->
+
+
+
+
+<div class="container">
+    <div class="card" *ngFor="let employee of employees">
+      <a (click)="logId(employee.id)">
+      <img src={{employee.image}}>
+      <div class="details">
+        <h4>{{employee.firstName}} {{employee.lastName}}</h4>
+        <p>{{employee.nameTitle}}</p>
+      </div>
+    </a>
+    </div>
+</div>

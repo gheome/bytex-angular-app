@@ -1,0 +1,12 @@
+<div *ngIf="canShow">
+<div class="container">
+  <div class="card" *ngIf="canShow">
+    <img src={{employee.image}}>
+    <div class="details">
+      <h4>{{employee.firstName}} {{employee.lastName}}</h4>
+      <p>{{employee.nameTitle}}</p>
+    </div>
+  </div>
+
+</div>
+</div>
